@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#030712"/>
+      <stop offset="100%" style="stop-color:#052e16"/>
+    </linearGradient>
+    <linearGradient id="emerald" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#34d399"/>
+      <stop offset="100%" style="stop-color:#10b981"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#34d399;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#065f46;stop-opacity:0.6"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="40" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="640" fill="url(#bg)"/>
+
+  <!-- Glow orbs -->
+  <circle cx="900" cy="200" r="300" fill="#10b981" fill-opacity="0.06" filter="url(#softglow)"/>
+  <circle cx="200" cy="500" r="200" fill="#10b981" fill-opacity="0.04" filter="url(#softglow)"/>
+
+  <!-- Grid lines -->
+  <line x1="700" y1="150" x2="1220" y2="150" stroke="#10b981" stroke-width="0.8" stroke-opacity="0.15"/>
+  <line x1="700" y1="250" x2="1220" y2="250" stroke="#10b981" stroke-width="0.8" stroke-opacity="0.15"/>
+  <line x1="700" y1="350" x2="1220" y2="350" stroke="#10b981" stroke-width="0.8" stroke-opacity="0.15"/>
+  <line x1="700" y1="450" x2="1220" y2="450" stroke="#10b981" stroke-width="0.8" stroke-opacity="0.15"/>
+
+  <!-- Chart bars (right side) -->
+  <rect x="730" y="350" width="60" height="150" rx="6" fill="url(#barGrad)" fill-opacity="0.5"/>
+  <rect x="810" y="290" width="60" height="210" rx="6" fill="url(#barGrad)" fill-opacity="0.6"/>
+  <rect x="890" y="230" width="60" height="270" rx="6" fill="url(#barGrad)" fill-opacity="0.7"/>
+  <rect x="970" y="180" width="60" height="320" rx="6" fill="url(#barGrad)" fill-opacity="0.8"/>
+  <rect x="1050" y="120" width="60" height="380" rx="6" fill="url(#barGrad)"/>
+  <rect x="1130" y="80" width="60" height="420" rx="6" fill="url(#barGrad)" filter="url(#glow)"/>
+
+  <!-- Arrow on last bar -->
+  <polygon points="1160,52 1144,76 1176,76" fill="#34d399" filter="url(#glow)"/>
+  <line x1="1160" y1="58" x2="1160" y2="78" stroke="#34d399" stroke-width="2"/>
+
+  <!-- Horizontal baseline -->
+  <line x1="700" y1="500" x2="1220" y2="500" stroke="#10b981" stroke-width="1.5" stroke-opacity="0.3"/>
+
+  <!-- Left side: branding -->
+  <!-- Live badge -->
+  <rect x="60" y="130" width="130" height="32" rx="16" fill="#052e16" stroke="#10b981" stroke-width="1" stroke-opacity="0.6"/>
+  <circle cx="82" cy="146" r="5" fill="#34d399" filter="url(#glow)"/>
+  <text x="95" y="151" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="600" fill="#34d399">LIVE ODDS</text>
+
+  <!-- Main title -->
+  <text x="60" y="240" font-family="'Segoe UI', Arial, sans-serif" font-size="88" font-weight="800" fill="white" letter-spacing="-2">Odds</text>
+  <text x="60" y="335" font-family="'Segoe UI', Arial, sans-serif" font-size="88" font-weight="800" fill="url(#emerald)" filter="url(#glow)" letter-spacing="-2">Edge</text>
+
+  <!-- Tagline -->
+  <text x="60" y="390" font-family="'Segoe UI', Arial, sans-serif" font-size="22" fill="#6ee7b7" letter-spacing="0.5">Find sure bets before anyone else</text>
+
+  <!-- Feature pills -->
+  <rect x="60" y="430" width="156" height="34" rx="17" fill="#064e3b" stroke="#10b981" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="138" y="452" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#6ee7b7" text-anchor="middle">30+ Bookmakers</text>
+
+  <rect x="228" y="430" width="156" height="34" rx="17" fill="#064e3b" stroke="#10b981" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="306" y="452" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#6ee7b7" text-anchor="middle">Arbitrage Scanner</text>
+
+  <rect x="396" y="430" width="156" height="34" rx="17" fill="#064e3b" stroke="#10b981" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="474" y="452" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#6ee7b7" text-anchor="middle">Dropping Odds</text>
+
+  <rect x="564" y="430" width="100" height="34" rx="17" fill="#064e3b" stroke="#10b981" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="614" y="452" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#6ee7b7" text-anchor="middle">Free</text>
+
+  <!-- Tech stack -->
+  <text x="60" y="530" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#4b5563" letter-spacing="0.5">Next.js 16  ·  TypeScript  ·  Tailwind CSS  ·  28 scrapers  ·  SQLite cache</text>
+
+  <!-- Bottom border accent -->
+  <rect x="60" y="570" width="400" height="3" rx="2" fill="url(#emerald)" fill-opacity="0.5"/>
+</svg>
