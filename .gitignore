@@ -47,3 +47,14 @@ next-env.d.ts
 
 # cache
 /.cache
+
+# Local environments and generated artifacts
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+node_modules/
+.cache/
+.pytest_cache/
+results/
